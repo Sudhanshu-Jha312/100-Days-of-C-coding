@@ -1,0 +1,92 @@
+# Question 59: Count even and odd numbers in an array.
+
+**Original question wording:**
+
+> Count even and odd numbers in an array.
+
+**Day:** 30
+
+**Date:** 08 September 2026
+
+## Aim
+
+To complete the requested task using a correct, standalone C program.
+
+## Algorithm
+
+1. **Input:** Read the values required by the question; open the named file when the task is file-based.
+2. **Process:** Inspect each array element's remainder modulo two and increment the matching count.
+3. **Output:** Display the requested value, classification, sequence, or file result.
+
+## C Program
+
+Complete standalone source: [Question_59.c](Question_59.c).
+
+```c
+/* Original question from the reference website:
+Count even and odd numbers in an array.
+*/
+#include <ctype.h>
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void) {
+    int n, value, even = 0, odd = 0;
+    if (scanf("%d", &n) != 1 || n < 1 || n > 1000) return 1;
+    for (int i = 0; i < n; i++) { if (scanf("%d", &value) != 1) return 1; if (value % 2 == 0) even++; else odd++; }
+    printf("Even = %d\nOdd = %d\n", even, odd);
+    return 0;
+}
+```
+
+## Sample Output
+
+Observed from running the sample input below:
+
+```text
+Input:
+5
+1 2 3 4 5
+
+Output:
+Even = 2
+Odd = 3
+```
+
+
+## Explanation
+
+`main` is where execution begins. Read the input described in the algorithm, then carry out the processing step using the variables, arrays, loops, and conditions shown in the C program. If the task uses a file, the program checks that it opened and reports I/O errors. The final output statement displays or writes the result, and `return 0` indicates successful completion.
+
+## Result
+
+The program implements the requested operation and produces the result for the supplied input.
+
+## Test Cases
+
+- **Normal case — executed:**
+
+  ```text
+    Input:
+  5
+  1 2 3 4 5
+
+  Output:
+  Even = 2
+  Odd = 3
+```
+- **Boundary/special case — executed**:
+
+  ```text
+  Input:
+  1
+  0
+
+  Output:
+  Even = 1
+  Odd = 0
+  ```
+
+**Validation status:** Compilation PASS; sample run PASS; boundary run PASS. Manual review: not yet recorded.
