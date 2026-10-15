@@ -116,3 +116,41 @@ Question wording is preserved in each explanation and in the source-file comment
 | 110 | Logic Enhancers | 60 | 08 October 2026 | [Question_110.c](./Day_60_2026-10-08/Question_110.c) | [Question_110.md](./Day_60_2026-10-08/Question_110.md) |
 | 111 | Logic Enhancers | 61 | 09 October 2026 | [Question_111.c](./Day_61_2026-10-09/Question_111.c) | [Question_111.md](./Day_61_2026-10-09/Question_111.md) |
 | 112 | Logic Enhancers | 62 | 10 October 2026 | [Question_112.c](./Day_62_2026-10-10/Question_112.c) | [Question_112.md](./Day_62_2026-10-10/Question_112.md) |
+| 113 | Logic Enhancers | 63 | 11 October 2026 | [Question_113.c](./Day_63_2026-10-11/Question_113.c) | [Question_113.md](./Day_63_2026-10-11/Question_113.md) |
+| 114 | Logic Enhancers | 64 | 12 October 2026 | [Question_114.c](./Day_64_2026-10-12/Question_114.c) | [Question_114.md](./Day_64_2026-10-12/Question_114.md) |
+| 115 | Logic Enhancers | 65 | 13 October 2026 | [Question_115.c](./Day_65_2026-10-13/Question_115.c) | [Question_115.md](./Day_65_2026-10-13/Question_115.md) |
+| 116 | Logic Enhancers | 66 | 14 October 2026 | [Question_116.c](./Day_66_2026-10-14/Question_116.c) | [Question_116.md](./Day_66_2026-10-14/Question_116.md) |
+| 117 | Logic Enhancers | 67 | 15 October 2026 | [Question_117.c](./Day_67_2026-10-15/Question_117.c) | [Question_117.md](./Day_67_2026-10-15/Question_117.md) |
+| 118 | Logic Enhancers | 68 | 16 October 2026 | [Question_118.c](./Day_68_2026-10-16/Question_118.c) | [Question_118.md](./Day_68_2026-10-16/Question_118.md) |
+| 119 | Logic Enhancers | 69 | 17 October 2026 | [Question_119.c](./Day_69_2026-10-17/Question_119.c) | [Question_119.md](./Day_69_2026-10-17/Question_119.md) |
+| 120 | File Handling | 70 | 18 October 2026 | [Question_120.c](./Day_70_2026-10-18/Question_120.c) | [Question_120.md](./Day_70_2026-10-18/Question_120.md) |
+| 121 | File Handling | 71 | 19 October 2026 | [Question_121.c](./Day_71_2026-10-19/Question_121.c) | [Question_121.md](./Day_71_2026-10-19/Question_121.md) |
+| 122 | File Handling | 72 | 20 October 2026 | [Question_122.c](./Day_72_2026-10-20/Question_122.c) | [Question_122.md](./Day_72_2026-10-20/Question_122.md) |
+| 123 | File Handling | 73 | 21 October 2026 | [Question_123.c](./Day_73_2026-10-21/Question_123.c) | [Question_123.md](./Day_73_2026-10-21/Question_123.md) |
+| 124 | File Handling | 74 | 22 October 2026 | [Question_124.c](./Day_74_2026-10-22/Question_124.c) | [Question_124.md](./Day_74_2026-10-22/Question_124.md) |
+| 125 | File Handling | 75 | 23 October 2026 | [Question_125.c](./Day_75_2026-10-23/Question_125.c) | [Question_125.md](./Day_75_2026-10-23/Question_125.md) |
+| 126 | File Handling | 76 | 24 October 2026 | [Question_126.c](./Day_76_2026-10-24/Question_126.c) | [Question_126.md](./Day_76_2026-10-24/Question_126.md) |
+| 127 | File Handling | 77 | 25 October 2026 | [Question_127.c](./Day_77_2026-10-25/Question_127.c) | [Question_127.md](./Day_77_2026-10-25/Question_127.md) |
+| 128 | File Handling | 78 | 26 October 2026 | [Question_128.c](./Day_78_2026-10-26/Question_128.c) | [Question_128.md](./Day_78_2026-10-26/Question_128.md) |
+| 129 | File Handling | 79 | 27 October 2026 | [Question_129.c](./Day_79_2026-10-27/Question_129.c) | [Question_129.md](./Day_79_2026-10-27/Question_129.md) |
+| 130 | File Handling | 80 | 28 October 2026 | [Question_130.c](./Day_80_2026-10-28/Question_130.c) | [Question_130.md](./Day_80_2026-10-28/Question_130.md) |
+| 131 | Enum | 81 | 29 October 2026 | [Question_131.c](./Day_81_2026-10-29/Question_131.c) | [Question_131.md](./Day_81_2026-10-29/Question_131.md) |
+| 132 | Enum | 82 | 30 October 2026 | [Question_132.c](./Day_82_2026-10-30/Question_132.c) | [Question_132.md](./Day_82_2026-10-30/Question_132.md) |
+| 133 | Enum | 83 | 31 October 2026 | [Question_133.c](./Day_83_2026-10-31/Question_133.c) | [Question_133.md](./Day_83_2026-10-31/Question_133.md) |
+| 134 | Enum | 84 | 01 November 2026 | [Question_134.c](./Day_84_2026-11-01/Question_134.c) | [Question_134.md](./Day_84_2026-11-01/Question_134.md) |
+| 135 | Enum | 85 | 02 November 2026 | [Question_135.c](./Day_85_2026-11-02/Question_135.c) | [Question_135.md](./Day_85_2026-11-02/Question_135.md) |
+| 136 | Enum | 86 | 03 November 2026 | [Question_136.c](./Day_86_2026-11-03/Question_136.c) | [Question_136.md](./Day_86_2026-11-03/Question_136.md) |
+| 137 | Enum | 87 | 04 November 2026 | [Question_137.c](./Day_87_2026-11-04/Question_137.c) | [Question_137.md](./Day_87_2026-11-04/Question_137.md) |
+| 138 | Enum | 88 | 05 November 2026 | [Question_138.c](./Day_88_2026-11-05/Question_138.c) | [Question_138.md](./Day_88_2026-11-05/Question_138.md) |
+| 139 | Enum | 89 | 06 November 2026 | [Question_139.c](./Day_89_2026-11-06/Question_139.c) | [Question_139.md](./Day_89_2026-11-06/Question_139.md) |
+| 140 | Enum and Structures | 90 | 07 November 2026 | [Question_140.c](./Day_90_2026-11-07/Question_140.c) | [Question_140.md](./Day_90_2026-11-07/Question_140.md) |
+| 141 | Structures | 91 | 08 November 2026 | [Question_141.c](./Day_91_2026-11-08/Question_141.c) | [Question_141.md](./Day_91_2026-11-08/Question_141.md) |
+| 142 | Structures | 92 | 09 November 2026 | [Question_142.c](./Day_92_2026-11-09/Question_142.c) | [Question_142.md](./Day_92_2026-11-09/Question_142.md) |
+| 143 | Structures | 93 | 10 November 2026 | [Question_143.c](./Day_93_2026-11-10/Question_143.c) | [Question_143.md](./Day_93_2026-11-10/Question_143.md) |
+| 144 | Structures | 94 | 11 November 2026 | [Question_144.c](./Day_94_2026-11-11/Question_144.c) | [Question_144.md](./Day_94_2026-11-11/Question_144.md) |
+| 145 | Structures | 95 | 12 November 2026 | [Question_145.c](./Day_95_2026-11-12/Question_145.c) | [Question_145.md](./Day_95_2026-11-12/Question_145.md) |
+| 146 | Structures | 96 | 13 November 2026 | [Question_146.c](./Day_96_2026-11-13/Question_146.c) | [Question_146.md](./Day_96_2026-11-13/Question_146.md) |
+| 147 | Structures and File Handling | 97 | 14 November 2026 | [Question_147.c](./Day_97_2026-11-14/Question_147.c) | [Question_147.md](./Day_97_2026-11-14/Question_147.md) |
+| 148 | Structures | 98 | 15 November 2026 | [Question_148.c](./Day_98_2026-11-15/Question_148.c) | [Question_148.md](./Day_98_2026-11-15/Question_148.md) |
+| 149 | Structures and Dynamic Memory | 99 | 16 November 2026 | [Question_149.c](./Day_99_2026-11-16/Question_149.c) | [Question_149.md](./Day_99_2026-11-16/Question_149.md) |
+| 150 | Structures and Pointers | 100 | 17 November 2026 | [Question_150.c](./Day_100_2026-11-17/Question_150.c) | [Question_150.md](./Day_100_2026-11-17/Question_150.md) |

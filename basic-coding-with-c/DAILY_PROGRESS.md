@@ -2,16 +2,16 @@
 
 These checklists track generated files and machine validation only. They do not claim that a learner completed, understood, or personally reviewed a question. A manual-review checkbox is intentionally left unchecked until a person performs that review.
 
-- Scope: Days 1–62 (Questions 1–112); later questions are not included.
-- Questions planned/generated: 112 / 112
-- Programs compiled successfully: 112 / 112
-- Sample runs completed successfully: 112 / 112
-- Boundary/special runs completed successfully: 103 / 103 attempted
-- Compiler invocations that emitted diagnostics: 13
+- Scope: Days 1–100 (Questions 1–150), matching the 150 questions currently listed on the reference website.
+- Questions planned/generated: 150 / 150
+- Programs compiled successfully: 150 / 150
+- Normal sample runs completed for all questions; the reference has inconsistencies in the expected outputs for Q120 and Q123 (see below).
+- Boundary/special runs completed successfully: 141 / 141 attempted
+- Compiler invocations that emitted diagnostics: 13 (all in the original Days 1–62; the 38 new programs compile without warnings).
 
 Status meanings: `generated` means files were created; `compile PASS` means GCC returned success; `sample PASS`/`edge PASS` mean the process exited successfully. These runs are not a substitute for manually comparing every result against an independent oracle. `manual review` remains unrecorded.
 
-The 13 compiler diagnostics are MinGW GCC format-checker warnings on standard C11 `%lld` input conversions. They were kept visible rather than suppressed; all affected programs compiled and their recorded runs exited successfully.
+The 13 compiler diagnostics are MinGW GCC format-checker warnings on standard C11 `%lld` input conversions in the original Days 1–62. They were kept visible rather than suppressed; all affected programs compiled and their recorded runs exited successfully. The 38 programs in Days 63–100 were compiled again with `gcc -std=c11 -Wall -Wextra -pedantic -lm`; all compiled with no warnings. Q120's first website sample omits a final period despite the input containing it (the other examples preserve punctuation); the program preserves it. Q123's supplied input content produces 33 characters and 6 whitespace-separated words, while the website claims 31 and 5; the solution follows the problem's count definition. Both discrepancies are documented alongside the solutions.
 ## Day 1 — 10 August 2026
 - [x] Q001: Write a program to input two numbers and display their sum. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
 - [x] Q002: Write a program to input two numbers and display their sum, difference, product, and quotient. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
@@ -247,3 +247,121 @@ The 13 compiler diagnostics are MinGW GCC format-checker warnings on standard C1
 
 ## Day 62 — 10 October 2026
 - [x] Q112: Write a program to take an integer array arr as input. The task is to find the maximum sum of any contiguous subarray using Kadane's algorithm. Print the maximum sum as output. If all elements are negative, print the largest (least negative) element. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Days 63–100 — Remaining website questions
+
+The current website JSON lists 150 questions. Questions 113–150 continue one per day, matching its stated pace after Day 50. New solutions were generated, compiled, and run on sample and special cases; manual review is not claimed.
+
+## Day 63 — 11 October 2026
+- [x] Q113: Write a program to take an integer array arr and an integer k as inputs. The task is to find the kth smallest element in the array. Print the kth smallest element as output. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 64 — 12 October 2026
+- [x] Q114: Write a program to take a string s as input. The task is to find the length of the longest substring without repeating characters. Print the length as output. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 65 — 13 October 2026
+- [x] Q115: Write a program to take two strings s and t as inputs (assume all characters are lowercase). The task is to determine if s and t are valid anagrams, meaning they contain the same characters with the same frequencies. Print "Anagram" if they are, otherwise "Not Anagram". — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 66 — 14 October 2026
+- [x] Q116: Write a program to take an integer array nums which contains only positive integers, and an integer target as inputs. The goal is to find two distinct indices i and j in the array such that nums[i] + nums[j] equals the target. Assume exactly one solution exists and return the indices in any order. Print the two indices separated by a space as output. If no solution exists, print "-1 -1". — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 67 — 15 October 2026
+- [x] Q117: Write a program to take two sorted arrays of size m and n as input. Merge both the arrays such that the merged array is also sorted. Print the merged array. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 68 — 16 October 2026
+- [x] Q118: Write a program to take an input array of size n. The array should contain all the integers between 0 to n except for one. Print that missing number. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 69 — 17 October 2026
+- [x] Q119: Write a program to take an integer array as input. Only one element will be repeated. Print the repeated element. Try to find the result in one single iteration. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 70 — 18 October 2026
+- [x] Q120: Write a program to take a string input. Change it to sentence case. — generated; compile PASS; sample executed; reference punctuation mismatch documented; edge PASS; manual review: not yet recorded.
+
+## Day 71 — 19 October 2026
+- [x] Q121: Write a C program that creates a text file named info.txt in write mode. The program should take the user’s name and age as input, and write them to the file using fprintf(). After writing, display a message confirming that the data was successfully saved. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 72 — 20 October 2026
+- [x] Q122: Write a C program that opens an existing file (e.g., info.txt) and reads its contents using fgets(). The program should print all the lines to the console until EOF (end of file) is reached. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 73 — 21 October 2026
+- [x] Q123: Read a text file and count the total number of characters, words, and lines. A word is defined as a sequence of non-space characters separated by spaces or newlines. — generated; compile PASS; executed PASS; website expected-count mismatch documented; manual review: not yet recorded.
+
+## Day 74 — 22 October 2026
+- [x] Q124: Take two filenames from the user – a source file and a destination file. Copy all the content from the source file to the destination file using fgetc() and fputc(). — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 75 — 23 October 2026
+- [x] Q125: Open an existing file in append mode and allow the user to enter a new line of text. Append the text at the end without overwriting existing content. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 76 — 24 October 2026
+- [x] Q126: Ask the user for a filename. Check if it exists by trying to open it in read mode. If the file pointer is NULL, print an error message; otherwise, read and display its content. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 77 — 25 October 2026
+- [x] Q127: Write a program that reads text from input.txt, converts all lowercase letters to uppercase, and writes the result to output.txt. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 78 — 26 October 2026
+- [x] Q128: Read a text file and count how many vowels and consonants are in the file. Ignore digits and special characters. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 79 — 27 October 2026
+- [x] Q129: A file numbers.txt contains a list of integers separated by spaces. Read all integers, compute their sum and average, and print both. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 80 — 28 October 2026
+- [x] Q130: Store multiple student records (name, roll number, marks) into a file using fprintf(). Then read them using fscanf() and display each record. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 81 — 29 October 2026
+- [x] Q131: Create an enumeration for days (SUNDAY to SATURDAY) and print each day with its integer value. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 82 — 30 October 2026
+- [x] Q132: Define an enum for traffic lights (RED, YELLOW, GREEN) and print 'Stop', 'Wait', or 'Go' based on its value. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 83 — 31 October 2026
+- [x] Q133: Create an enum for months and print how many days each month has. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 84 — 01 November 2026
+- [x] Q134: Define an enum with SUCCESS, FAILURE, and TIMEOUT, and print messages accordingly. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 85 — 02 November 2026
+- [x] Q135: Assign explicit values starting from 10 and print them. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 86 — 03 November 2026
+- [x] Q136: Use enum to represent menu choices (ADD, SUBTRACT, MULTIPLY) and perform operations using switch. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 87 — 04 November 2026
+- [x] Q137: Create an enum for user roles (ADMIN, USER, GUEST) and display messages based on role. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 88 — 05 November 2026
+- [x] Q138: Print all enum names and integer values using a loop. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 89 — 06 November 2026
+- [x] Q139: Show that enums store integers by printing assigned values. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 90 — 07 November 2026
+- [x] Q140: Define a struct with enum Gender and print person's gender. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 91 — 08 November 2026
+- [x] Q141: Define a structure Student with name, roll_no, and marks, then read and print one student's data. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 92 — 09 November 2026
+- [x] Q142: Store details of 5 students in an array of structures and print all. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 93 — 10 November 2026
+- [x] Q143: Find and print the student with the highest marks. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 94 — 11 November 2026
+- [x] Q144: Write a function that accepts a structure as parameter and prints its members. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 95 — 12 November 2026
+- [x] Q145: Return a structure containing top student's details from a function. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 96 — 13 November 2026
+- [x] Q146: Create Employee structure with nested Date structure for joining date and print details. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 97 — 14 November 2026
+- [x] Q147: Store employee data in a binary file using fwrite() and read using fread(). — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 98 — 15 November 2026
+- [x] Q148: Take two structs as input and check if they are identical. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 99 — 16 November 2026
+- [x] Q149: Use malloc() to allocate structure memory dynamically and print details. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.
+
+## Day 100 — 17 November 2026
+- [x] Q150: Use pointer to struct to modify and display data using -> operator. — generated; compile PASS; sample PASS; edge PASS; manual review: not yet recorded.

@@ -1,6 +1,6 @@
 # Basic Coding with C — Daily Practice
 
-A first-year-friendly practice record containing the first 112 exercises (Days 1–62) from the [reference website](https://maitysoumik.github.io/basic-coding-with-c/). Each included exercise has its own C11 program and explanation. The website's stated pace—two questions per day for the first 50 days, then one per day—is followed.
+A first-year-friendly practice record containing all 150 exercises currently listed on the [reference website](https://maitysoumik.github.io/basic-coding-with-c/). Each exercise has its own C11 program and explanation. The website's stated pace—two questions per day for the first 50 days, then one per day—is followed.
 
 The dates below are the intended practice schedule beginning 10 August 2026. They are not Git timestamps and do not assert that any question was completed on its scheduled date.
 
@@ -32,7 +32,7 @@ basic-coding-with-c/
 │   ├── Question_01.c
 │   ├── Question_01.md
 │   └── Question_02.c / Question_02.md
-└── ... through Day_62_2026-10-10/
+└── ... through Day_100_2026-11-17/
 ```
 
 ## Daily schedule
@@ -101,15 +101,52 @@ basic-coding-with-c/
 | 60 | 08 October 2026 | Q110 |
 | 61 | 09 October 2026 | Q111 |
 | 62 | 10 October 2026 | Q112 |
+| 63 | 11 October 2026 | Q113 |
+| 64 | 12 October 2026 | Q114 |
+| 65 | 13 October 2026 | Q115 |
+| 66 | 14 October 2026 | Q116 |
+| 67 | 15 October 2026 | Q117 |
+| 68 | 16 October 2026 | Q118 |
+| 69 | 17 October 2026 | Q119 |
+| 70 | 18 October 2026 | Q120 |
+| 71 | 19 October 2026 | Q121 |
+| 72 | 20 October 2026 | Q122 |
+| 73 | 21 October 2026 | Q123 |
+| 74 | 22 October 2026 | Q124 |
+| 75 | 23 October 2026 | Q125 |
+| 76 | 24 October 2026 | Q126 |
+| 77 | 25 October 2026 | Q127 |
+| 78 | 26 October 2026 | Q128 |
+| 79 | 27 October 2026 | Q129 |
+| 80 | 28 October 2026 | Q130 |
+| 81 | 29 October 2026 | Q131 |
+| 82 | 30 October 2026 | Q132 |
+| 83 | 31 October 2026 | Q133 |
+| 84 | 01 November 2026 | Q134 |
+| 85 | 02 November 2026 | Q135 |
+| 86 | 03 November 2026 | Q136 |
+| 87 | 04 November 2026 | Q137 |
+| 88 | 05 November 2026 | Q138 |
+| 89 | 06 November 2026 | Q139 |
+| 90 | 07 November 2026 | Q140 |
+| 91 | 08 November 2026 | Q141 |
+| 92 | 09 November 2026 | Q142 |
+| 93 | 10 November 2026 | Q143 |
+| 94 | 11 November 2026 | Q144 |
+| 95 | 12 November 2026 | Q145 |
+| 96 | 13 November 2026 | Q146 |
+| 97 | 14 November 2026 | Q147 |
+| 98 | 15 November 2026 | Q148 |
+| 99 | 16 November 2026 | Q149 |
+| 100 | 17 November 2026 | Q150 |
 
 ## Validation snapshot
 
-- Questions and solution/explanation pairs created: 112 (Days 1–62 only)
-- Scheduled days: 62 (10 August–10 October 2026)
-- Programs compiled successfully: 112/112
-- Normal sample runs successful: 112/112
-- Boundary/special test runs successful: 103/103 attempted
-- Compilation diagnostics emitted: 13 (review compiler diagnostics before treating as warning-free)
+- Questions and solution/explanation pairs created: 150
+- Scheduled days: 100 (10 August–17 November 2026)
+- Programs compiled successfully: 150/150; the 38 programs in Days 63–100 were independently recompiled with no warnings.
+- New sample and special-case runs: completed for all 38 additions. The reference has inconsistent expected output for Q120 punctuation and Q123 character/word counts; both solutions preserve the described behavior and document the discrepancies.
+- The original Days 1–62 have 13 recorded MinGW format-checker diagnostics; see [DAILY_PROGRESS.md](./DAILY_PROGRESS.md).
 - Manual review status: not recorded; learner completion or understanding is not claimed.
 
 See [QUESTION_INDEX.md](./QUESTION_INDEX.md) for every question and [DAILY_PROGRESS.md](./DAILY_PROGRESS.md) for per-question validation status.
